@@ -1,0 +1,4 @@
+#Tue Oct 30 02:10:15 ICT 2018
+base.0=D\:\\File\\utsku\\wdwd\\0645_Anang\\favouritelistapp\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
