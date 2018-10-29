@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anang.gapuramovie.Fragment.PopularFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_movie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/acitivity_10dp_margin"
+        android:paddingRight="@dimen/acitivity_10dp_margin"
+        android:paddingTop="@dimen/acitivity_5dp_margin" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:theme="@style/OrangeAccent" />
+
+</RelativeLayout>

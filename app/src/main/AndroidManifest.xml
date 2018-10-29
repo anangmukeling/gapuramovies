@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anang.gapuramovie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <permission
+        android:name="com.anang.gapuramovie.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.anang.gapuramovie.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_movie_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_movie_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchableActivity" />
+        </activity>
+        <activity
+            android:name=".DetailMoviesActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".SearchableActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".FavouriteActivity"
+            android:theme="@style/NoActionBar" />
+
+        <provider
+            android:name=".Provider.FavouriteProvider"
+            android:authorities="com.anang.gapuramovie"
+            android:exported="true"
+            android:readPermission="com.anang.gapuramovie.READ_DATABASE"
+            android:writePermission="com.anang.gapuramovie.WRITE_DATABASE" />
+
+        <receiver
+            android:name=".alarm.DailyAlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver android:name=".widget.ImageBannerWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/image_banner_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".widget.StackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <activity
+            android:name=".SettingActivity"
+            android:theme="@style/NoActionBar" />
+
+        <receiver
+            android:name=".alarm.ReleaseTodayReminder"
+            android:enabled="true"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

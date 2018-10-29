@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Katalog Film</string>
+
+    // Detail Activity
+    <string name="detail_overview">Ikhtisar</string>
+    <string name="detail_title_status">Status</string>
+    <string name="detail_title_release_date">Tanggal Rilis</string>
+    <string name="detail_title_original_language">Bahasa</string>
+    <string name="detail_title_runtime">Durasi</string>
+    <string name="detail_title_homepage">Laman</string>
+
+    // Menu Pencarian
+    <string name="action_search">Aksi Pencarian</string>
+    <string name="searchable_search_movie">Cari Film</string>
+    <string name="close">Tutup</string>
+
+    <string name="navigation_drawer_open">Buka panel samping navigasi</string>
+    <string name="navigation_drawer_close">Tutup panel samping navigasi</string>
+
+    // Menu Panel Samping Navigasi
+    <string name="home">Beranda</string>
+    <string name="change_language">Ubah Bahasa</string>
+    <string name="settings">Pengaturan</string>
+
+    // Nama Tab
+    <string name="tab_popular">POPULER</string>
+    <string name="tab_now_playing">SEDANG TAYANG</string>
+    <string name="tab_upcoming">AKAN HADIR</string>
+
+    // Toast
+    <string name="toast_empty">Kosong</string>
+    <string name="toast_failed">Gagal</string>
+    <string name="toast_not_found">Film tidak ditemukan</string>
+
+    <string name="progress_loading">Memuat</string>
+    <string name="minute">\u0020menit</string>
+    <string name="no_tagline">Tidak Ada Slogan</string>
+
+    <string name="rating">Rating</string>
+
+    <string name="favourite">Favorit</string>
+    <string name="add_favourite">Ditambahkan ke dalam daftar favorit</string>
+    <string name="remove_favourite">Dihapus dari daftar favorit</string>
+    <string name="no_favourite_data">Tidak ada data favorit</string>
+    <string name="removed_favourite">Satu item dihapus dari daftar favorit</string>
+    <string name="share">Berbagi</string>
+    <string name="share_using">Berbagi dengan</string>
+
+    <string name="favourite_list">Daftar Favorit</string>
+    <string name="empty_text">DATA KOSONG</string>
+
+    <string name="release_notification1">Hari ini</string>
+    <string name="release_notification2">rilis</string>
+    <string name="repeat_notif">Katalog Film Dicoding merindukanmu&#8230;</string>
+
+    <string name="preferences_title_1">Ubah Bahasa</string>
+    <string name="preferences_summary_1">Tekan untuk mengubah bahasa</string>
+    <string name="preferences_summary_2">Matikan atau Aktifkan fitur ini</string>
+    <string name="preferences_title_2">Reminder Harian</string>
+    <string name="preferences_title_3">Reminder Rilis</string>
+    <string name="preferences_summary_3">Memberi Anda notifikasi film yang baru dirilis</string>
+    <string name="Language">Bahasa</string>
+    <string name="Notifications">Pemberitahuan</string>
+
+    <string name="setting">Pengaturan</string>
+
+</resources>

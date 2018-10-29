@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Favourite List</string>
+
+    <string name="detail_movie_title">Movie Title</string>
+    <string name="detail_movie_description">Description</string>
+
+    // Detail Activity
+    <string name="detail_overview">Overview</string>
+    <string name="detail_title_status">Status</string>
+    <string name="detail_title_release_date">Release Date</string>
+    <string name="detail_title_original_language">Original Language</string>
+    <string name="detail_title_runtime">Runtime</string>
+    <string name="detail_title_homepage">Homepage</string>
+    <string name="rating">Rating</string>
+    <string name="progress_loading">Loading</string>
+    <string name="minute">\u0020mins</string>
+    <string name="no_tagline">No Tagline</string>
+    <string name="add_favourite">Added to the favourite list</string>
+    <string name="remove_favourite">Removed from favourite list</string>
+    <string name="no_favourite_data">No Favourite Data</string>
+    <string name="removed_favourite">One item removed from favourite</string>
+
+    <string name="favourite">Favourite</string>
+    <string name="change_language">Change Language</string>
+    <string name="share">Share</string>
+    <string name="share_using">Share Using</string>
+</resources>
